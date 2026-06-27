@@ -2,62 +2,126 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Silvana Andrea - Autora</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Silvana Andrea – Autora de "Gritos prestados"</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sitio oficial de la autora Silvana Andrea, creadora de Gritos prestados. Una memoria.">
   <style>
     body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      max-width: 700px;
-      margin: 40px auto;
-      padding: 0 16px;
-      line-height: 1.6;
-      color: #222;
-      background-color: #fafafa;
+      margin: 0;
+      font-family: "Georgia", "Times New Roman", serif;
+      background-color: #ffffff;
+      color: #222222;
     }
-    h1 {
-      font-size: 1.8rem;
-      margin-bottom: 0.2rem;
+    header {
+      border-bottom: 1px solid #e0e0e0;
+      padding: 20px 40px;
     }
-    h2 {
-      font-size: 1.3rem;
-      margin-top: 2rem;
-    }
-    a {
-      color: #0056b3;
+    nav a {
+      margin-right: 20px;
       text-decoration: none;
+      color: #222222;
+      font-size: 0.95rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
     }
-    a:hover {
+    nav a:hover {
       text-decoration: underline;
     }
-    .highlight {
-      font-weight: 600;
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 60px 40px;
+      gap: 40px;
+      align-items: center;
+    }
+    .hero img {
+      max-width: 260px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .hero-text {
+      max-width: 600px;
+    }
+    .hero-text h1 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+    .hero-text h2 {
+      font-size: 1.3rem;
+      font-weight: normal;
+      color: #666666;
+      margin-bottom: 25px;
+    }
+    .quote {
+      font-style: italic;
+      margin-bottom: 25px;
+      line-height: 1.6;
+    }
+    .buttons a {
+      display: inline-block;
+      margin-right: 15px;
+      padding: 10px 18px;
+      border: 1px solid #222222;
+      text-decoration: none;
+      color: #222222;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .buttons a.primary {
+      background-color: #222222;
+      color: #ffffff;
+    }
+    footer {
+      border-top: 1px solid #e0e0e0;
+      padding: 20px 40px;
+      font-size: 0.85rem;
+      color: #777777;
+    }
+    @media (max-width: 768px) {
+      .hero {
+        padding: 40px 20px;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Silvana Andrea</h1>
-  <p class="highlight">Autora de <em>Gritos prestados. Una memoria</em></p>
+  <header>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="sobre-mi.html">Sobre mí</a>
+      <a href="libro.html">El libro</a>
+      <a href="prensa.html">Prensa</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
 
-  <h2>Email oficial de autora</h2>
-  <p>
-    Para contacto profesional y de autora, este es mi correo oficial:<br>
-    <span class="highlight">📧 <a href="mailto:gritosprestados@gmail.com">gritosprestados@gmail.com</a></span>
-  </p>
+  <main>
+    <section class="hero">
+      <div>
+        <img src="portada-gritos-prestados.jpg" alt="Portada del libro Gritos prestados. Una memoria">
+      </div>
+      <div class="hero-text">
+        <h1>Gritos prestados. Una memoria</h1>
+        <h2>Silvana Andrea</h2>
+        <p class="quote">
+          “Hay historias que no se escriben para cerrar una herida, sino para dejar de sostenerla sola.”
+        </p>
+        <p>
+          Una memoria sobre trauma complejo infantil, negligencia emocional, maltrato psicológico y el largo camino
+          de la reconstrucción. Un testimonio íntimo que dialoga con la filosofía, la música y la literatura de autores
+          como Hermann Hesse.
+        </p>
+        <div class="buttons">
+          <a href="libro.html" class="primary">Sobre el libro</a>
+          <a href="https://www.caligramaeditorial.com/libro/Gritos-prestados?isbn=9791388171086" target="_blank" rel="noopener noreferrer">Dónde conseguirlo</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-  <h2>Presencia editorial</h2>
-  <p>
-    Ficha oficial del libro en Caligrama:<br>
-    <a href="https://www.caligramaeditorial.com/libro/Gritos-prestados?isbn=9791388171086" target="_blank" rel="noopener">
-      Gritos prestados – Caligrama Editorial
-    </a>
-  </p>
-
-  <h2>Redes</h2>
-  <p>
-    Instagram de autora:<br>
-    <a href="https://www.instagram.com/gritosprestados/" target="_blank" rel="noopener">
-      @gritosprestados
-    </a>
-  </p>
+  <footer>
+    Sitio oficial de la autora Silvana Andrea ·
+    Instagram: <a href="https://www.instagram.com/gritosprestados/" target="_blank" rel="noopener noreferrer">@gritosprestados</a>
+  </footer>
 </body>
 </html>
